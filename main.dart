@@ -1,4 +1,3 @@
-
 void main() {
   // 1: Khai bao bien va kieu du lieu
   // String name = "";
@@ -99,4 +98,23 @@ void main() {
 
   // Kick thuoc cua mang
   // print(listNames.length);
+
+  // Set
+
+  // Khoi tao
+  var setNumbers = Set<num>();
+
+  // Them gia tri
+  setNumbers.add(1);
+  setNumbers.add(1);
+  setNumbers.add(10);
+
+  // Xoa phan tu
+  setNumbers.remove(1);
+
+  // Lay phan tu
+  print(setNumbers.elementAt(0));
+
+  // Kich thuoc mang
+  print(setNumbers.length);
 }
