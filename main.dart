@@ -1,4 +1,3 @@
-import 'dart:ffi';
 
 void main() {
   // 1: Khai bao bien va kieu du lieu
@@ -70,12 +69,34 @@ void main() {
   // }
 
   // 5: Cau kien switch case
-  var month = 3;
-  switch (month) {
-    case 1:
-    case 2:
-    case 3: print("Quy 1");
-      break;
-  }
-  print("Tiep tuc");
+  // var month = 3;
+  // switch (month) {
+  //   case 1:
+  //   case 2:
+  //   case 3: print("Quy 1");
+  //     break;
+  // }
+  // print("Tiep tuc");
+
+  // 6: Mang
+
+  // list
+
+  // Khoi tao mang
+  // var listNames = List<String>.empty(growable: true);
+  // var listNames = [];
+
+  // Them du lieu vao mang
+  // listNames.add("Nam");
+  // listNames.add("Phat");
+  // listNames.add("Tuan");
+  
+  // Xoá dữ liệu trong mảng
+  // listNames.removeAt(1);
+
+  // Lay gia tri
+  // print(listNames[1]);
+
+  // Kick thuoc cua mang
+  // print(listNames.length);
 }
