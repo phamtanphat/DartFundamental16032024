@@ -42,9 +42,9 @@ void main() {
   // Case 2 (++a)
   // Thuc hien bieu thuc a = a + 1
   // Gan gia tri cua a
-  var a = 5;
-  var b = 7;
-  var result = --a + b-- + b-- + ++a + ++b - a--;
+  // var a = 5;
+  // var b = 7;
+  // var result = --a + b-- + b-- + ++a + ++b - a--;
   // 4 + b-- + b-- + ++a + ++b - a--; a = 4, b = 7
   // 4 + 7 + b-- + ++a + ++b - a--; a = 4, b = 6
   // 4 + 7 + 6 + ++a + ++b - a--; a = 4, b = 5
@@ -53,7 +53,29 @@ void main() {
   // 4 + 7 + 6 + 5 + 6 - 5; a = 4, b = 6
 
   // a = 4, b = 6, result = 23
-  print("A: $a");
-  print("B: $b");
-  print("Result: $result");
+  // print("A: $a");
+  // print("B: $b");
+  // print("Result: $result");
+
+  // 4: Cau dieu kien if else
+  // var a = 5;
+  // var b = 10;
+  //
+  // if (a > b) {
+  //   print("a lon hon b");
+  // } else if (a == b) {
+  //   print("a bang b");
+  // } else {
+  //   print("a be hon b");
+  // }
+
+  // 5: Cau kien switch case
+  var month = 3;
+  switch (month) {
+    case 1:
+    case 2:
+    case 3: print("Quy 1");
+      break;
+  }
+  print("Tiep tuc");
 }
