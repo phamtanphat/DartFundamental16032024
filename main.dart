@@ -102,19 +102,38 @@ void main() {
   // Set
 
   // Khoi tao
-  var setNumbers = Set<num>();
-
-  // Them gia tri
-  setNumbers.add(1);
-  setNumbers.add(1);
-  setNumbers.add(10);
+  // var setNumbers = Set<num>();
+  //
+  // // Them gia tri
+  // setNumbers.add(1);
+  // setNumbers.add(1);
+  // setNumbers.add(10);
 
   // Xoa phan tu
-  setNumbers.remove(1);
+  // setNumbers.remove(1);
 
   // Lay phan tu
-  print(setNumbers.elementAt(0));
+  // print(setNumbers.elementAt(0));
+  //
+  // // Kich thuoc mang
+  // print(setNumbers.length);
+
+  // Map
+
+  // Khoi tao mang
+  var mapPerson = Map<String, dynamic>();
+
+  // Them phan tu
+  mapPerson["name"] = "Phat";
+  mapPerson["age"] = 30;
+  mapPerson["address"] = "Sai gon";
+
+  // Xoa phan tu
+  mapPerson.remove("name");
+
+  // Cap nhat gia tri cho phan tu
+  mapPerson["age"] = 33;
 
   // Kich thuoc mang
-  print(setNumbers.length);
+  print(mapPerson.length);
 }
