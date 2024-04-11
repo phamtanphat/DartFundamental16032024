@@ -1,6 +1,3 @@
-import 'dart:ffi';
-import 'dart:io';
-
 void main() {
   // 1: Khai bao bien va kieu du lieu
   // String name = "";
@@ -173,17 +170,38 @@ void main() {
   // 250
 
   // 8: Vong lăp while
-  do {
-    print("Input number: ");
-    String? input = stdin.readLineSync();
-    if (input?.isNotEmpty == true) {
-       int number = int.parse(input ?? "-1");
-       if (number <= 0) return;
-       if ( number % 2 == 0) {
-         print("Number: $number is an integer");
-       } else {
-         print("Number: $number is not interger");
-       }
-    } else { return; }
-  } while(true);
+  // do {
+  //   print("Input number: ");
+  //   String? input = stdin.readLineSync();
+  //   if (input?.isNotEmpty == true) {
+  //      int number = int.parse(input ?? "-1");
+  //      if (number <= 0) return;
+  //      if ( number % 2 == 0) {
+  //        print("Number: $number is an integer");
+  //      } else {
+  //        print("Number: $number is not interger");
+  //      }
+  //   } else { return; }
+  // } while(true);
+
+  // 9 Phuong thuc (function)
+  // doSomething("Xin chào");
+
+  // Bai tap ve nha
+
+  // Tien de: Cho 1 vòng lặp chạy từ 0 -> 100
+  // 1: Tạo function in ra số chẳn
+  // 2: Tạo function in ra số lẻ
+  // 3: Tạo ra function in ra số chia 3 dư 1
+  // 4: Tạo ra function in ra số chính phương (Số có căn bậc 2)
+
+  // 5: Tạo ra function có thể giải quyết được 4 thằng trên
+
+  // for (var i = 0 ; i <= 100 ; i++) {
+  //   inSoChan(i);
+  // }
 }
+
+// void doSomething(String message) {
+//   print(message);
+// }
