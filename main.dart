@@ -1,3 +1,6 @@
+import 'dart:ffi';
+import 'dart:io';
+
 void main() {
   // 1: Khai bao bien va kieu du lieu
   // String name = "";
@@ -89,7 +92,7 @@ void main() {
   // listNames.add("Nam");
   // listNames.add("Phat");
   // listNames.add("Tuan");
-  
+
   // Xoá dữ liệu trong mảng
   // listNames.removeAt(1);
 
@@ -121,19 +124,66 @@ void main() {
   // Map
 
   // Khoi tao mang
-  var mapPerson = Map<String, dynamic>();
-
-  // Them phan tu
-  mapPerson["name"] = "Phat";
-  mapPerson["age"] = 30;
-  mapPerson["address"] = "Sai gon";
+  // var mapPerson = Map<String, dynamic>();
+  //
+  // // Them phan tu
+  // mapPerson["name"] = "Phat";
+  // mapPerson["age"] = 30;
+  // mapPerson["address"] = "Sai gon";
 
   // Xoa phan tu
-  mapPerson.remove("name");
+  // mapPerson.remove("name");
 
   // Cap nhat gia tri cho phan tu
-  mapPerson["age"] = 33;
+  // mapPerson["age"] = 33;
 
   // Kich thuoc mang
-  print(mapPerson.length);
+  // print(mapPerson.length);
+
+  // 7: Vong lap for
+
+  // var listNumbers1 = [1, 2, 3, 4, 5];
+  // var listNumbers2 = [10, 20, 30, 40, 50, 60];
+  //
+  // for (var i = 0; i < listNumbers2.length; i++) {
+  //   for (var j = 0; j < listNumbers1.length; j++) {
+  //     var value = listNumbers2[i] * listNumbers1[j];
+  //     print(value);
+  //   }
+  // }
+
+  // for (var i = 0; i < listNumbers1.length; i++) {
+  //   for (var j = 0; j < listNumbers2.length; j++)
+  //     print(listNumbers1[i] * listNumbers2[j]);
+  // }
+
+  // for (var i = 0; i < listNumbers1.length; i++) {
+  //
+  // }
+
+  // 10
+  // 20
+  // 30
+  // 40
+  // 50
+  // 20
+  // ...
+  // 150
+  // 200
+  // 250
+
+  // 8: Vong lăp while
+  do {
+    print("Input number: ");
+    String? input = stdin.readLineSync();
+    if (input?.isNotEmpty == true) {
+       int number = int.parse(input ?? "-1");
+       if (number <= 0) return;
+       if ( number % 2 == 0) {
+         print("Number: $number is an integer");
+       } else {
+         print("Number: $number is not interger");
+       }
+    } else { return; }
+  } while(true);
 }
