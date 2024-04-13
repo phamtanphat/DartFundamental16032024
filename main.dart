@@ -209,11 +209,17 @@ void main() {
   // });
 
   var listNumber = [1, 2, 3, 4, 5, 6, 7];
-  var newList = map(listNumber, true, (i) {
-    return i * 2;
-  });
+  // var newList = map(listNumber, true, (i) {
+  //   return i * 2;
+  // });
+  //
+  // print(newList[0].runtimeType);
 
-  print(newList[0].runtimeType);
+  var newListNumber = filter(listNumber, (i) {
+    return i % 2 == 0;
+  })
+
+  => [2, 4, 6];
 }
 
 // Expected: Tao ra 1 mang moi voi cac phan tu duoc xu ly theo yeu cau
@@ -227,6 +233,10 @@ List<dynamic> map(List<dynamic> list, bool isToString, Function handleElement) {
   return newList;
 }
 
+// Expected: Tạo ra 1 mảng mới chứa các phần tử thoả điều kiện cần lọc
+List<dynamic> filter(List<dynamic> list) {
+
+}
 // void inSoChan() {
 //   for (var i = 0; i <= 100; i++) {
 //     if (i % 2 == 0) print(i);
