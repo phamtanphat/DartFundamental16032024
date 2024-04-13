@@ -216,27 +216,33 @@ void main() {
   // print(newList[0].runtimeType);
 
   var newListNumber = filter(listNumber, (i) {
-    return i % 2 == 0;
-  })
+    return i % 2 == 1;
+  });
 
-  => [2, 4, 6];
+  print(newListNumber);
+
 }
 
 // Expected: Tao ra 1 mang moi voi cac phan tu duoc xu ly theo yeu cau
-List<dynamic> map(List<dynamic> list, bool isToString, Function handleElement) {
+List<dynamic> map(List<dynamic> list, Function handleElement) {
   var newList = [];
   for (var i = 0; i < list.length; i++) {
     var newValue = handleElement(list[i]);
-    if (isToString) newValue = newValue.toString();
     newList.add(newValue);
   }
   return newList;
 }
 
 // Expected: Tạo ra 1 mảng mới chứa các phần tử thoả điều kiện cần lọc
-List<dynamic> filter(List<dynamic> list) {
-
+List<dynamic> filter(List<dynamic> list, Function handleElement) {
+  var newList = [];
+  for (var i = 0; i < list.length; i++) {
+    var isTrue = handleElement(list[i]);
+    if (isTrue) newList.add(list[i]);
+  }
+  return newList;
 }
+
 // void inSoChan() {
 //   for (var i = 0; i <= 100; i++) {
 //     if (i % 2 == 0) print(i);
