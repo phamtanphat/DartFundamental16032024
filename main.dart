@@ -1,3 +1,5 @@
+import 'dart:math';
+
 void main() {
   // 1: Khai bao bien va kieu du lieu
   // String name = "";
@@ -200,8 +202,41 @@ void main() {
   // for (var i = 0 ; i <= 100 ; i++) {
   //   inSoChan(i);
   // }
+
+  // inSoChinhPhuong();
+  tongHop((i) {
+    return i % 2 == 1;
+  });
 }
 
-// void doSomething(String message) {
-//   print(message);
-// }
+void inSoChan() {
+  for (var i = 0; i <= 100; i++) {
+    if (i % 2 == 0) print(i);
+  }
+}
+
+void inSoLe() {
+  for (var i = 0; i <= 100; i++) {
+    if (i % 2 == 1) print(i);
+  }
+}
+
+void inSoChia3Du1() {
+  for (var i = 0; i <= 100; i++) {
+    if (i % 3 == 1) print(i);
+  }
+}
+
+void inSoChinhPhuong() {
+  for (var i = 0; i <= 100; i++) {
+    if (sqrt(i) % 1 == 0) print(i);
+  }
+}
+
+// Higher order function
+void tongHop(Function callBackCondition) {
+  for (var i = 0; i <= 100; i++) {
+    var isTrue = callBackCondition(i);
+    if (isTrue) print(i);
+  }
+}
