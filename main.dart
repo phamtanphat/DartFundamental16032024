@@ -221,12 +221,18 @@ void main() {
   //
   // print(newListNumber);
 
-  sum(10);
+  // sum(10);
+  minus();
 }
 
-// Positional option parameter
+// Optional positional parameter
 void sum([int a = 0, int b = 0]) {
   print(a + b);
+}
+
+// Optional named parameter
+void minus({int a = 0, int b = 0}) {
+  print(a - b);
 }
 
 // Expected: Tao ra 1 mang moi voi cac phan tu duoc xu ly theo yeu cau
