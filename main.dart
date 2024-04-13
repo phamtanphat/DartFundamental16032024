@@ -204,39 +204,57 @@ void main() {
   // }
 
   // inSoChinhPhuong();
-  tongHop((i) {
-    return i % 2 == 1;
+  // tongHop((i) {
+  //   return i % 2 == 1;
+  // });
+
+  var listNumber = [1, 2, 3, 4, 5, 6, 7];
+  var newList = map(listNumber, true, (i) {
+    return i * 2;
   });
+
+  print(newList[0].runtimeType);
 }
 
-void inSoChan() {
-  for (var i = 0; i <= 100; i++) {
-    if (i % 2 == 0) print(i);
+// Expected: Tao ra 1 mang moi voi cac phan tu duoc xu ly theo yeu cau
+List<dynamic> map(List<dynamic> list, bool isToString, Function handleElement) {
+  var newList = [];
+  for (var i = 0; i < list.length; i++) {
+    var newValue = handleElement(list[i]);
+    if (isToString) newValue = newValue.toString();
+    newList.add(newValue);
   }
+  return newList;
 }
 
-void inSoLe() {
-  for (var i = 0; i <= 100; i++) {
-    if (i % 2 == 1) print(i);
-  }
-}
-
-void inSoChia3Du1() {
-  for (var i = 0; i <= 100; i++) {
-    if (i % 3 == 1) print(i);
-  }
-}
-
-void inSoChinhPhuong() {
-  for (var i = 0; i <= 100; i++) {
-    if (sqrt(i) % 1 == 0) print(i);
-  }
-}
+// void inSoChan() {
+//   for (var i = 0; i <= 100; i++) {
+//     if (i % 2 == 0) print(i);
+//   }
+// }
+//
+// void inSoLe() {
+//   for (var i = 0; i <= 100; i++) {
+//     if (i % 2 == 1) print(i);
+//   }
+// }
+//
+// void inSoChia3Du1() {
+//   for (var i = 0; i <= 100; i++) {
+//     if (i % 3 == 1) print(i);
+//   }
+// }
+//
+// void inSoChinhPhuong() {
+//   for (var i = 0; i <= 100; i++) {
+//     if (sqrt(i) % 1 == 0) print(i);
+//   }
+// }
 
 // Higher order function
-void tongHop(Function callBackCondition) {
-  for (var i = 0; i <= 100; i++) {
-    var isTrue = callBackCondition(i);
-    if (isTrue) print(i);
-  }
-}
+// void tongHop(Function callBackCondition) {
+//   for (var i = 0; i <= 100; i++) {
+//     var isTrue = callBackCondition(i);
+//     if (isTrue) print(i);
+//   }
+// }
