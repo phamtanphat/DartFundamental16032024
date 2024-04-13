@@ -208,40 +208,46 @@ void main() {
   //   return i % 2 == 1;
   // });
 
-  var listNumber = [1, 2, 3, 4, 5, 6, 7];
+  // var listNumber = [1, 2, 3, 4, 5, 6, 7];
   // var newList = map(listNumber, true, (i) {
   //   return i * 2;
   // });
   //
   // print(newList[0].runtimeType);
 
-  var newListNumber = filter(listNumber, (i) {
-    return i % 2 == 1;
-  });
+  // var newListNumber = filter(listNumber, (i) {
+  //   return i % 2 == 1;
+  // });
+  //
+  // print(newListNumber);
 
-  print(newListNumber);
+  sum(10);
+}
 
+// Positional option parameter
+void sum([int a = 0, int b = 0]) {
+  print(a + b);
 }
 
 // Expected: Tao ra 1 mang moi voi cac phan tu duoc xu ly theo yeu cau
-List<dynamic> map(List<dynamic> list, Function handleElement) {
-  var newList = [];
-  for (var i = 0; i < list.length; i++) {
-    var newValue = handleElement(list[i]);
-    newList.add(newValue);
-  }
-  return newList;
-}
+// List<dynamic> map(List<dynamic> list, Function handleElement) {
+//   var newList = [];
+//   for (var i = 0; i < list.length; i++) {
+//     var newValue = handleElement(list[i]);
+//     newList.add(newValue);
+//   }
+//   return newList;
+// }
 
 // Expected: Tạo ra 1 mảng mới chứa các phần tử thoả điều kiện cần lọc
-List<dynamic> filter(List<dynamic> list, Function handleElement) {
-  var newList = [];
-  for (var i = 0; i < list.length; i++) {
-    var isTrue = handleElement(list[i]);
-    if (isTrue) newList.add(list[i]);
-  }
-  return newList;
-}
+// List<dynamic> filter(List<dynamic> list, Function handleElement) {
+//   var newList = [];
+//   for (var i = 0; i < list.length; i++) {
+//     var isTrue = handleElement(list[i]);
+//     if (isTrue) newList.add(list[i]);
+//   }
+//   return newList;
+// }
 
 // void inSoChan() {
 //   for (var i = 0; i <= 100; i++) {
