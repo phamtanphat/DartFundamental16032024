@@ -1,5 +1,7 @@
 import 'dart:math';
 
+import 'person.dart';
+
 void main() {
   // 1: Khai bao bien va kieu du lieu
   // String name = "";
@@ -222,18 +224,40 @@ void main() {
   // print(newListNumber);
 
   // sum(10);
-  minus();
+  // minus();
+
+  // var person = Person("", 0);
+  // changePerson(person);
+  // print(person.name);
+
+  var number1 = 5;
+  var number2 = 10;
+  // sum(number1, number2);
+  print(number1);
+  print(number2);
 }
 
-// Optional positional parameter
-void sum([int a = 0, int b = 0]) {
+// Truyen tham chieu (object)
+void changePerson(Person person) {
+  person.name = "abc";
+}
+
+// Truyen tham tri (primitives)
+void sum(int a, int b) {
+  a = 10;
+  b = 20;
   print(a + b);
 }
 
+// Optional positional parameter
+// void sum([int a = 0, int b = 0]) {
+//   print(a + b);
+// }
+
 // Optional named parameter
-void minus({int a = 0, int b = 0}) {
-  print(a - b);
-}
+// void minus({int a = 0, int b = 0}) {
+//   print(a - b);
+// }
 
 // Expected: Tao ra 1 mang moi voi cac phan tu duoc xu ly theo yeu cau
 // List<dynamic> map(List<dynamic> list, Function handleElement) {
