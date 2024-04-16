@@ -226,28 +226,27 @@ void main() {
   // sum(10);
   // minus();
 
-  // var person = Person("", 0);
-  // changePerson(person);
-  // print(person.name);
-
-  var number1 = 5;
-  var number2 = 10;
+  // var number1 = 5;
+  // var number2 = 10;
   // sum(number1, number2);
-  print(number1);
-  print(number2);
+  // print(number1);
+  // print(number2);
+
+  var person = Person("Phat", 30);
+  print(person.name);
 }
 
 // Truyen tham chieu (object)
-void changePerson(Person person) {
-  person.name = "abc";
-}
+// void changePerson(Person person) {
+//   person.name = "abc";
+// }
 
 // Truyen tham tri (primitives)
-void sum(int a, int b) {
-  a = 10;
-  b = 20;
-  print(a + b);
-}
+// void sum(int a, int b) {
+//   a = 10;
+//   b = 20;
+//   print(a + b);
+// }
 
 // Optional positional parameter
 // void sum([int a = 0, int b = 0]) {

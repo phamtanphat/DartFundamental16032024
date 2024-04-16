@@ -4,8 +4,10 @@ class Person {
   late int age;
 
   // constructor
-  Person(String name, int age) {
-    this.name = name;
-    this.age = age;
-  }
+  // Person(String name, int age) {
+  //   this.name = name;
+  //   this.age = age;
+  // }
+
+  Person(this.name, this.age);
 }
