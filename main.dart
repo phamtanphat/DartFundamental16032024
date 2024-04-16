@@ -233,7 +233,13 @@ void main() {
   // print(number2);
 
   var person = Person("Phat", 30);
-  print(person.name);
+  person.setName("abc");
+  // print(person.name);
+
+  // Tinh dong goi
+  // Tinh ke thua
+  // Tinh da hinh
+  // Tinh truu tuong
 }
 
 // Truyen tham chieu (object)
