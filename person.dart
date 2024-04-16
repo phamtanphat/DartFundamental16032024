@@ -11,12 +11,20 @@ class Person {
 
   Person(this._name, this.age);
 
-  void setName(String name) {
-    if (name.isEmpty) return;
+  String get name {
+    return _name;
+  }
+
+  void set name(String name) {
     _name = name;
   }
 
-  String getName() {
-    return _name;
-  }
+  // void setName(String name) {
+  //   if (name.isEmpty) return;
+  //   _name = name;
+  // }
+  //
+  // String getName() {
+  //   return _name;
+  // }
 }
