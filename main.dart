@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'Parent.dart';
 import 'person.dart';
 
 void main() {
@@ -232,9 +233,12 @@ void main() {
   // print(number1);
   // print(number2);
 
-  var person = Person("Phat", 30);
-  person.name = "abc";
-  print(person.name);
+  // var person = Person("Phat", 30);
+  // person.name = "abc";
+  // print(person.name);
+
+  var parent = Parent("Papa", 60);
+  print("${parent.name} ${parent.age}");
 
   // Tinh dong goi
   // Tinh ke thua

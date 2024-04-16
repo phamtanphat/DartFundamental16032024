@@ -1,6 +1,6 @@
 class Person {
   // Property
-  late String _name;
+  late String name;
   late int age;
 
   // constructor
@@ -9,15 +9,15 @@ class Person {
   //   this.age = age;
   // }
 
-  Person(this._name, this.age);
+  Person(this.name, this.age);
 
-  String get name {
-    return _name;
-  }
-
-  void set name(String name) {
-    _name = name;
-  }
+  // String get name {
+  //   return _name;
+  // }
+  //
+  // void set name(String name) {
+  //   _name = name;
+  // }
 
   // void setName(String name) {
   //   if (name.isEmpty) return;
