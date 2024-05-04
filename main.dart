@@ -2,6 +2,8 @@ import 'dart:math';
 
 import 'parent.dart';
 import 'person.dart';
+import 'pizza_cheese.dart';
+import 'pizza_store.dart';
 
 void main() {
   // 1: Khai bao bien va kieu du lieu
@@ -237,13 +239,16 @@ void main() {
   // person.name = "abc";
   // print(person.name);
 
-  var parent = Parent("Papa", 60);
-  parent.printInfo();
+  // var parent = Parent("Papa", 60);
+  // parent.printInfo();
 
   // Tinh dong goi
   // Tinh ke thua
   // Tinh da hinh
   // Tinh truu tuong
+
+  var pizzaStore = PizzaStore();
+  pizzaStore.orderPizza(PizzaCheese());
 }
 
 // Truyen tham chieu (object)
