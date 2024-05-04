@@ -11,6 +11,10 @@ class Person {
 
   Person(this.name, this.age);
 
+  void printInfo() {
+    print("Person: $name $age");
+  }
+
   // String get name {
   //   return _name;
   // }

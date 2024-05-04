@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'Parent.dart';
+import 'parent.dart';
 import 'person.dart';
 
 void main() {
@@ -238,7 +238,7 @@ void main() {
   // print(person.name);
 
   var parent = Parent("Papa", 60);
-  print("${parent.name} ${parent.age}");
+  parent.printInfo();
 
   // Tinh dong goi
   // Tinh ke thua
