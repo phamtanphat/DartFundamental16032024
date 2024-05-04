@@ -1,5 +1,7 @@
 import 'dart:math';
 
+import 'api_server1_connect.dart';
+import 'app_connection.dart';
 import 'parent.dart';
 import 'person.dart';
 import 'pizza_cheese.dart';
@@ -247,8 +249,11 @@ void main() {
   // Tinh da hinh
   // Tinh truu tuong
 
-  var pizzaStore = PizzaStore();
-  pizzaStore.orderPizza(PizzaCheese());
+  // var pizzaStore = PizzaStore();
+  // pizzaStore.orderPizza(PizzaCheese());
+
+  var appConnection = AppConnection(ApiServer1Connect());
+  appConnection.connectToServer();
 }
 
 // Truyen tham chieu (object)
